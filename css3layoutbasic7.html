@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>css 레이아웃 기본 7</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-between;
+            grid-auto-rows: 1fr;
+            gap: 6px;
+        }
+        .box{
+            background-color: #369;
+            padding: 10px;
+            display: grid;
+            align-content: space-between;
+        }
+        .box > div {
+            background-color: #fac;
+            width: 100%;height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>제목1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque incidunt eum excepturi facere laborum iste
+                a!</p>
+            <div></div>
+        </div>
+        <div class="box">
+            <h2>제목2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div></div>
+        </div>
+        <div class="box">
+            <h2>제목3</h2>
+            <p>Eveniet accusantium amet rerum recusandae eius consequuntur, explicabo fugit exercitationem quas ab
+                praesentium consequatur?</p>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
